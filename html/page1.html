@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>可塑性记忆</title>
+    <style>
+        /* 样式 */
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            color: rgba(235, 82, 230, 0.8);
+        }
+
+        .bg-image {
+            background-image: url('../image/8e158a9d9c45489ba127e2f1796cca94.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+
+        .audio-wrapper {
+            position: fixed;
+            left: 0;
+            bottom: 25px;
+            width: 180px;
+            /* 设置宽度，使得控制栏不占满整个屏幕 */
+            padding: 10px;
+            background-color: rgba(173, 197, 220, 0);
+            /* 控制栏背景透明度 */
+            z-index: 9999;
+            /* 确保控制栏在最上层 */
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        /* 左侧导航栏 */
+        #sidebar {
+            position: fixed;
+            top: 100px;
+            left: 0;
+            bottom: 25px;
+            width: 200px;
+            background-color: rgba(173, 197, 220, 0.3);
+            overflow-y: auto;
+        }
+
+        /* 标题背景 */
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background-color: rgb(92, 142, 250);
+            background-image: url('../image/5bec6cd1decec832f2914e6b9e8fe0f8.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+
+        /* 版权背景 */
+        #footer {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 25px;
+            background-color: rgba(244, 175, 46, 0.7);
+        }
+
+        /* 右侧内容 */
+        #content {
+            position: relative;
+            top: 100px;
+            margin-left: 200px;
+            bottom: 25px;
+            width: 1355px;
+            background-color: rgba(173, 197, 220, 0.5);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-image">
+
+    <!-- 背景音乐 -->
+    <div class="audio-wrapper">
+        <audio autoplay loop controls>
+            <source src="../audio/aila.mp3">
+        </audio>
+    </div>
+
+    <!-- 标题背景 -->
+    <div id="header">
+        <h1>《可塑性记忆》</h1>
+    </div>
+
+    <!-- 左侧导航栏 -->
+    <div id="sidebar">
+        <ul
+            style="font-size: 42px; color: rgb(234, 200, 32);background-color: rgba(197, 106, 222,0.7);margin-top: 0px;">
+            导航栏
+        </ul>
+        <ul style="font-size: 24px; color: rgb(238, 35, 231);padding-top: 10px;">
+            <li><a href="page1.html">故事概要</a></li>
+            <li><a href="page2.html">分集</a></li>
+            <li><a href="page3.html">人物图鉴</a></li>
+            <li><a href="page4.html">制作人员</a></li>
+            <li><a href="../index.html">返回导航页</a></li>
+        </ul>
+    </div>
+
+    <!-- 右侧内容 -->
+    <div id="content">
+        <div style="font-size: 24px; color: rgb(32, 33, 34);padding-top: 10px;">
+            <h2>番剧概述</h2>
+            <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;《可塑性记忆》是ANIPLEX公司企划的原创电视动画
+                ，由负责过5pb.公司开发的《命运石之门》等“科学ADV系列”游戏剧本的林直孝担当编剧。作品背景为智能机器人普及后的近未来，故事的主线为描绘智能机器人的恋爱故事。
+            </div>
+            <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;故事发生在一个比现在的科学要进步的世界。18岁的水柿司高考失败，多亏父母找关系得以进入世界大企业SAI社工作。SAI社是制造管理拥有感情的人形智能机器人（通称：Giftia）的企业，司在其中被安排到终端服务部门工作。这个部门其实就是回收即将到期的Giftia，是所谓的“窗边部门（不被重视的部门）”。于是司和打杂的Giftia少女“艾拉”组成搭档，一起开始了工作……
+            </div>
+            <h2>番剧短评</h2>
+            <div>1、主题与基本设定</div>
+            <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                它的设定是简单与真实的。人的寿命被限制到小时，并且无论如何我们都得接受这样一条道路。你奔走着，希望能出现以各种方式延续人的生命的奇迹，但是无济于事。
+                你清楚地知道，一切一切的情感、回忆、感情纽带，都是有着明确的最后期限，不可能是永恒的。无论快乐的事，伤心的事，最终只会变成虚无。即使如此，你还要创造它们吗？放在他人身上，你明白：与你有着感情联系的那个人走了，你会接受与他有关的一切故事吗？你会认为这一切都是真实发生的吗？所以，去除掉可能会让人吐槽的有一些夸张的设定，全篇的主基调是这样一个极真实、极简的设定。全篇显得挺空洞，当然这也是本作最大的弊端。当然在比较平淡的情节当中，更显这部作品的真实。
+            </div>
+            <img src="https://img0.baidu.com/it/u=1396836731,3706803550&fm=253&fmt=auto&app=120&f=JPEG?w=801&h=500"
+                alt="pho1">
+            <img src="https://img1.baidu.com/it/u=3073433620,1181813678&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500"
+                alt="pho1">
+            <div>2、童话的包装</div>
+            <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;然而很明显，《可塑性记忆》不仅只停留于让人压抑的寿命设定，其包装上亦有相当独特与出彩的地方。从艾拉的机器人特色、摩天轮与游乐园、日记与钥匙扣，以及回收业务等近未来科幻题材包装，都从一开始就定下了比较欢乐和明快的基调。而这其中的亮点就是用游乐园一天里人们的心情，概述、类比人们一生的心态变化——天真无邪到开始变得焦急、浮躁，接着疲惫、略显寂寞，最后接纳自己的一生，把寿命这一本来十分严肃的话题，作了十分童话而且出众的包装。
+                试图表现「回忆是真实的，幸福是真实的，即使那是曾经拥有过的。」这一主题的《可塑性记忆》，在全篇后端着重为艾拉和司创造一系列小而甜的幸福回忆，直到最后一刻。艾拉让自己沉睡在了最幸福、最快乐、最闪耀的地方，当然也是最充满回忆的地方。也许生命的高光时刻，每个人的解读有不同，但是对于艾拉来说那就是游乐园，看着许许多多人的笑颜的时刻，与司登上只有两个人的摩天轮的时刻。这也确实是这部作品闪耀到我的地方。
+                在这样童话般的包装中，有难以回避的真实。《可塑性记忆》满足了观众对艾拉的幸福几乎一切的期待，但是只有唯一一点，寿命这一件事是绝对的红线，不可商量。结局已是完美，然而完美却还是虐，撕心裂肺地虐。你总绕不开生命期限的根本设定，这是最根本的自然规律，无可挽回。
+            </div>
+            <img src="https://img2.baidu.com/it/u=1438325469,2084176974&fm=253&fmt=auto&app=138&f=JPEG?w=889&h=500"
+                alt="pho1">
+            <img src="https://img2.baidu.com/it/u=2414360149,3027949116&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=500"
+                alt="pho1">
+            <div>3、多采用无声的动画传达感情</div>
+            <div>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                童话般地包装在近未来世界下，《可塑性记忆》并非一个有着明显悬念的故事，从一开始，所有人就基本或多或少猜得到结局。然而，它独特的叙述手段，正慢慢讲述着一个大家都明白的小小温暖。
+
+                在叙事手段上，《可塑性记忆》时而有着自己做得非常出色的地方，而这其中做的很棒的地方是纯动画讲故事的能力。从原画集上就可以看到，可塑性记忆的作画与动画质量是相当高的，表情上微妙的细节描绘得相当到位，再加上很不错的动画效果，将一个个无声的画面传递出无尽的余韵。
+                事实上艾拉的形象，配合精心料理香草、烧水泡茶、写日记的生活习惯，表现的就是一个温柔、细腻，而略显忧伤的安静的女孩子形象。而这样无声的每一个场景，都给人静谧中的温暖，正如在城市的一隅独自品味香草茶的时候，能体味到的那些甜、苦以及热度。
+                而这些也是我觉得特别美的片段。静静地看着摩天轮流泪也好；静静地用心培育这花草，感受着生命的萌动，并打心底为之高兴的小片段也好；在工作中的喜怒哀乐，全部好好地记载了自己的日记中这一点也好，结局也好。越是安静的画面，配合非常恬静的动画表现，越是表现了动画制作组在此场景上的充分的自信，事实上传达出的包含美感在内的感情信息也越丰富。这种恬静中表现感情的方法，在结局的六分钟没有背景音乐的故事中表现得淋漓尽致。
+                在充满回忆的幸福之地，游乐园的光芒中，摩天轮的小小的美丽空间下，在城市夜晚的海滨上空。如此幸福的，与一切最美好回忆挂钩的离开方式，是对《可塑性记忆》主题最积极的诠释，也是所能做到的最好的结局。
+
+                「愿你有一天能与重要的人重逢!」
+                这样的告别方式，是适合艾拉的，是我超喜欢的。这种告别方式，不仅让人感动，更重要的是，真的很美。
+            </div>
+
+            <img src="https://img2.baidu.com/it/u=55507239,1354821762&fm=253&fmt=auto&app=138&f=JPEG?w=500&h=647"
+                alt="pho1">
+            <img src="https://img0.baidu.com/it/u=1075956022,2833142380&fm=253&fmt=auto&app=138&f=JPEG?w=600&h=308"
+                alt="pho1">
+            <div>4、作品缺陷</div>
+            <div>
+                &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;直到最后一刻，可塑性记忆都根本没有想催泪（个人观点!）。直到最后一刻，制作组所想的全部是——在有限的时间内，尽可能为艾拉多创造一些幸福的回忆。
+
+                作者完全可以写一个更虐的结局：艾拉他们逃到了教堂之后，艾拉最后一天变得不安，开始唠叨着关于几天没人打理的香草的事情；希望司做泡茶二代目，好好照顾那些香草的事情；开始惦念着想再去一次摩天轮的事情；开始要求司读她的日记的事情；听着挚友切尔西的故事；司对着艾拉的空壳，见艾拉一直没有反应，道歉也没用，哭泣也没用，请求她笑也没用；以及两年后司看到艾拉的重置机体，惊喜地想跟上去，却发现氛围完全不对，只能呆呆着克制着自己，目送艾拉的重置机体远去。
+                然而，编剧并没有做这样的选择，而是满足了观众几乎对艾拉的幸福几乎所有的愿望。让艾拉几乎完美地离开，希望我们能够也像艾拉一样，最后也接受这段回忆，微笑地结束这段故事旅程。毕竟，它的本质是很甜的爱情故事，或许作者不想掺和太多东西进来。
+
+                当然，按照剧情需要，《可塑性记忆》还有非常非常多的选择。在有关于非法回收商以及总公司与分公司的矛盾，以及回收对象的故事，甚至是切尔西的故事，本来都可以做一定程度的展开。然而《可塑性记忆》并没有做这样的选择，这让人匪夷所思，也是本作品一个很大的缺憾，因为如果使用了这些素材的话，作品的空洞问题就会得到明显缓解。
+                明明有这么好的想法，这么好的主线剧情，这么好的背景人物和世界设定，这么好的心理描写，却就不去发挥出来，而要硬塞点有的没的这样的东西，非要自毁成一般佳作。对超喜欢的作品恨铁不成钢的心情就是这样。
+            </div>
+            <img src="https://img0.baidu.com/it/u=1389017251,295336392&fm=253&fmt=auto&app=120&f=JPEG?w=800&h=500"
+                alt="pho1">
+
+            <img src="https://img1.baidu.com/it/u=3501749717,2064152613&fm=253&fmt=auto&app=120&f=JPEG?w=801&h=500"
+                alt="pho1">
+            <img src=" https://img1.baidu.com/it/u=4155138845,2291844421&fm=253&fmt=auto&app=138&f=JPEG?w=890&h=500"
+                alt="pho1">
+
+        </div>
+
+        <!-- 版权背景 -->
+        <div id="footer">Changbo Yan 20222241434</div>
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>可塑性记忆</title>
+    <style>
+        /* 样式 */
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            color: rgba(235, 82, 230, 0.8);
+        }
+
+        .bg-image {
+            background-image: url('./image/8e158a9d9c45489ba127e2f1796cca94.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+
+        .audio-wrapper {
+            position: fixed;
+            left: 0;
+            bottom: 25px;
+            width: 180px;
+            /* 设置宽度，使得控制栏不占满整个屏幕 */
+            padding: 10px;
+            background-color: rgba(173, 197, 220, 0);
+            /* 控制栏背景透明度 */
+            z-index: 9999;
+            /* 确保控制栏在最上层 */
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        /* 左侧导航栏 */
+        #sidebar {
+            position: fixed;
+            top: 100px;
+            left: 0;
+            bottom: 25px;
+            width: 200px;
+            background-color: rgba(173, 197, 220, 0.3);
+            overflow-y: auto;
+        }
+
+        /* 标题背景 */
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background-color: rgb(92, 142, 250);
+            background-image: url('./image/5bec6cd1decec832f2914e6b9e8fe0f8.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+
+
+        /* 版权背景 */
+        #footer {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 25px;
+            background-color: rgba(244, 175, 46, 0.7);
+        }
+
+        /* 右侧内容 */
+        #content {
+            position: fixed;
+            top: 100px;
+            margin-left: 200px;
+            bottom: 25px;
+            width: 1355px;
+            background-color: rgba(173, 197, 220, 0.5);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-image">
+
+    <!-- 背景音乐播放器 -->
+    <div class="audio-wrapper">
+        <audio id="bgmPlayer" controls autoplay>
+            <!-- 最初加载第一个音轨 -->
+            <source src="./audio/bgm1.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+    <script>
+        // 背景音乐轨道列表
+        var bgmTracks = ['./audio/bgm1.mp3', './audio/bgm2.mp3', './audio/bgm3.mp3'];
+        
+        // 获取音频元素
+        var bgmAudio = document.getElementById('bgmPlayer');
+        var currentTrackIndex = 0;
+        bgmAudio.addEventListener('ended', function() {
+            currentTrackIndex++;
+            if (currentTrackIndex >= bgmTracks.length) {
+                currentTrackIndex = 0;
+            }
+            bgmAudio.src = bgmTracks[currentTrackIndex];
+            bgmAudio.play();
+        });
+    </script>
+    
+
+
+    <!-- 标题背景 -->
+    <div id="header">
+        <h1>《可塑性记忆》</h1>
+    </div>
+
+    <!-- 左侧导航栏 -->
+    <div id="sidebar">
+        <ul
+            style="font-size: 42px; color: rgb(234, 200, 32);background-color: rgba(197, 106, 222,0.7);margin-top: 0px;">
+            导航栏
+        </ul>
+        <ul style="font-size: 24px; color: rgb(238, 35, 231);padding-top: 10px;">
+            <li><a href="html/page1.html">故事概要</a></li>
+            <li><a href="html/page2.html">分集</a></li>
+            <li><a href="html/page3.html">人物图鉴</a></li>
+            <li><a href="html/page4.html">制作人员</a></li>
+        </ul>
+    </div>
+
+    <!-- 右侧内容 -->
+    <div id="content">
+        <!--简介-->
+        <div style="margin:0px 60px 0px 0px;float: left;"><a
+                href="https://baike.baidu.com/item/%E5%8F%AF%E5%A1%91%E6%80%A7%E8%AE%B0%E5%BF%86/15847619?fr=ge_ala"><img
+                    src="https://www.bnacg.com/uploads/2107/1-210HG0453Lb.jpg" alt="《可塑性记忆 PLASTIC MEMORIES》"></img></a>
+        </div>
+        <div style="font-size: 24px; color: rgb(32, 33, 34);padding-top: 40px;">
+            <div> 《可塑性记忆 PLASTIC MEMORIES》 </div>
+            <div> 评分：<span>9.7（2023.06.20来自b站数据）</span></div>
+            <div><span>别名：</span>プラスティック・メモリーズ </div>
+            <div><span>原著：</span>林直孝 </div>
+            <div><span>角色：</span>水柿司,艾拉 </div>
+            <div><span>类型：</span>科幻,爱情,治愈（致郁） </div>
+            <div><span>年代：</span><span>2015年4月4日－6月27日</span></div>
+            <div><span>地区：</span>日本</div>
+            <div><span>制作：</span>动画工房</div>
+            <div><span>集数：</span>13集 | <span>状态：</span>已完结</div>
+            <div><span>观看链接：</span>
+                <a href="https://www.bilibili.com/bangumi/play/ss1552">https://www.bilibili.com/bangumi/play/ss1552</a>
+            </div>
+        </div>
+
+        <div style="font-size: 36px; font-style:italic; color: rgb(243, 63, 150);padding-top: 110px;">
+            <div>愿你有一天能和最重要的人重逢</div>
+            <div style="text-align:right;">——《可塑性记忆 PLASTIC MEMORIES》</div>
+        </div>
+    </div>
+
+    <!-- 版权背景 -->
+    <div id="footer">Changbo Yan 20222241434</div>
+</body>
+
+</html>

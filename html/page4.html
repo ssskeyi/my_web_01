@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>可塑性记忆</title>
+    <style>
+        /* 样式 */
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            color: rgba(235, 82, 230, 0.8);
+        }
+
+        .bg-image {
+            background-image: url('../image/8e158a9d9c45489ba127e2f1796cca94.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+
+        .audio-wrapper {
+            position: fixed;
+            left: 0;
+            bottom: 25px;
+            width: 180px;
+            /* 设置宽度，使得控制栏不占满整个屏幕 */
+            padding: 10px;
+            background-color: rgba(173, 197, 220, 0);
+            /* 控制栏背景透明度 */
+            z-index: 9999;
+            /* 确保控制栏在最上层 */
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        /* 左侧导航栏 */
+        #sidebar {
+            position: fixed;
+            top: 100px;
+            left: 0;
+            bottom: 25px;
+            width: 200px;
+            background-color: rgba(173, 197, 220, 0.3);
+            overflow-y: auto;
+        }
+
+        /* 标题背景 */
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background-color: rgb(92, 142, 250);
+            background-image: url('../image/5bec6cd1decec832f2914e6b9e8fe0f8.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+
+
+        /* 版权背景 */
+        #footer {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 25px;
+            background-color: rgba(244, 175, 46, 0.7);
+        }
+
+        /* 右侧内容 */
+        #content {
+            position: relative;
+            top: 100px;
+            margin-left: 200px;
+            bottom: 25px;
+            width: 1355px;
+            background-color: rgba(173, 197, 220, 0.5);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-image">
+
+    <!-- 背景音乐 -->
+    <div class="audio-wrapper">
+        <audio autoplay loop controls>
+            <source src="../audio/aila.mp3">
+        </audio>
+    </div>
+
+    <!-- 标题背景 -->
+    <div id="header">
+        <h1>《可塑性记忆》</h1>
+    </div>
+
+    <!-- 左侧导航栏 -->
+    <div id="sidebar">
+        <ul
+            style="font-size: 42px; color: rgb(234, 200, 32);background-color: rgba(197, 106, 222,0.7);margin-top: 0px;">
+            导航栏
+        </ul>
+        <ul style="font-size: 24px; color: rgb(238, 35, 231);padding-top: 10px;">
+            <li><a href="page1.html">故事概要</a></li>
+            <li><a href="page2.html">分集</a></li>
+            <li><a href="page3.html">人物图鉴</a></li>
+            <li><a href="page4.html">制作人员</a></li>
+            <li><a href="../index.html">返回导航页</a></li>
+        </ul>
+    </div>
+
+    <!-- 右侧内容 -->
+    <div id="content">
+        <div>
+            <div><span></span>
+                <h2>作品评价</h2>
+            </div>
+            <p>
+                　　《可塑性记忆》(日语：プラスティック・メモリーズ)，是由动画工房制作的日本原创电视动画，2015年4月4日播出并于6月27日完结，同时宣布小说化。2016年5月19日宣布游戏化。
+            </p>
+            <h3>
+                制作人员</h3>
+            <p>
+                　　原作、剧本：林直孝</p>
+            <p>
+                　　监督：藤原佳幸</p>
+            <p>
+                　　角色原案：okiura</p>
+            <p>
+                　　角色设计、总作画监督：中岛千明</p>
+            <p>
+                　　道具设计、总作画监督：菊池爱</p>
+            <p>
+                　　色彩设定：石黒けい</p>
+            <p>
+                　　美术监督：川口正明</p>
+            <p>
+                　　美术设定：高桥武之</p>
+            <p>
+                　　撮影监督：桑野贵文</p>
+            <p>
+                　　机械设计：谷裕司</p>
+            <p>
+                　　3D、CG：渡边悦启</p>
+            <p>
+                　　剪接：平木大辅</p>
+            <p>
+                　　音乐：横山克</p>
+            <p>
+                　　音乐制作：MAGES.</p>
+            <p>
+                　　音响监督：土屋雅纪</p>
+            <p>
+                　　音响效果：小山恭正</p>
+            <p>
+                　　动画制作：动画工房</p>
+            <p>
+                <strong>　　主题曲</strong>
+            </p>
+            <p>
+                　　片头曲&ldquo;Ring of Fortune&rdquo;</p>
+            <p>
+                　　作词：林直孝，作曲、编曲：千叶&quot;naotyu-&quot;直树，主唱：佐佐木惠梨</p>
+            <p>
+                　　第8话当作片尾曲使用。</p>
+            <p>
+                　　片尾曲&ldquo;朝焼けのスターマイン&rdquo;</p>
+            <p>
+                　　作词：林直孝，作曲：石田秀登，编曲：Tak Miyazawa，主唱：今井麻美</p>
+            <p>
+                <strong>　　插入曲</strong>
+            </p>
+            <p>
+                　　&ldquo;again &amp; again&rdquo;</p>
+            <p>
+                　　作词：五阿弥瑠奈，作曲、编曲：横山克，主唱：Melody Chubak</p>
+            <p>
+                　　&ldquo;好きなので。&rdquo;(第10话)</p>
+            <p>
+                　　作词：林英树、林直孝，作曲、编曲：横山克，主唱：艾拉(雨宫天)</p>
+        </div>
+    </div>
+
+    <!-- 版权背景 -->
+    <div id="footer">Changbo Yan 20222241434</div>
+</body>
+
+</html>

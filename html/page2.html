@@ -1,0 +1,369 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>可塑性记忆</title>
+    <style>
+        /* 样式 */
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            color: rgba(235, 82, 230, 0.8);
+        }
+
+        .bg-image {
+            background-image: url('../image/8e158a9d9c45489ba127e2f1796cca94.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+
+        .audio-wrapper {
+            position: fixed;
+            left: 0;
+            bottom: 25px;
+            width: 180px;
+            /* 设置宽度，使得控制栏不占满整个屏幕 */
+            padding: 10px;
+            background-color: rgba(173, 197, 220, 0);
+            /* 控制栏背景透明度 */
+            z-index: 9999;
+            /* 确保控制栏在最上层 */
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        /* 左侧导航栏 */
+        #sidebar {
+            position: fixed;
+            top: 100px;
+            left: 0;
+            bottom: 25px;
+            width: 200px;
+            background-color: rgba(173, 197, 220, 0.3);
+            overflow-y: auto;
+        }
+
+        /* 标题背景 */
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background-color: rgb(92, 142, 250);
+            background-image: url('../image/5bec6cd1decec832f2914e6b9e8fe0f8.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+
+
+        /* 版权背景 */
+        #footer {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 25px;
+            background-color: rgba(244, 175, 46, 0.7);
+        }
+
+        /* 右侧内容 */
+        #content {
+            position: relative;
+            top: 100px;
+            margin-left: 200px;
+            bottom: 25px;
+            width: 1355px;
+            background-color: rgba(173, 197, 220, 0.5);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-image">
+
+    <!-- 背景音乐 -->
+    <div class="audio-wrapper">
+        <audio autoplay loop controls>
+            <source src="../audio/aila.mp3">
+        </audio>
+    </div>
+
+    <!-- 标题背景 -->
+    <div id="header">
+        <h1>《可塑性记忆》</h1>
+    </div>
+
+    <!-- 左侧导航栏 -->
+    <div id="sidebar">
+        <ul
+            style="font-size: 42px; color: rgb(234, 200, 32);background-color: rgba(197, 106, 222,0.7);margin-top: 0px;">
+            导航栏
+        </ul>
+        <ul style="font-size: 24px; color: rgb(238, 35, 231);padding-top: 10px;">
+            <li><a href="page1.html">故事概要</a></li>
+            <li><a href="page2.html">分集</a></li>
+            <li><a href="page3.html">人物图鉴</a></li>
+            <li><a href="page4.html">制作人员</a></li>
+            <li><a href="../index.html">返回导航页</a></li>
+        </ul>
+    </div>
+
+    <!-- 右侧内容 -->
+    <div id="content">
+        <table
+            style="font-size: 24px; background-color: rgba(248, 249, 250,0.5); color: rgb(32, 33, 34); margin: 0px auto; border-style: solid; border-color: rgb(162, 169, 177); border-collapse: collapse; font-family: sans-serif; text-align: center;">
+            <tbody>
+                <!-- 表头 -->
+                <tr>
+                    <th
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em; background-color: rgba(234, 236, 240,0.4); text-align: center;">
+                        话数</th>
+                    <th
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em; background-color: rgba(234, 236, 240,0.4); text-align: center;">
+                        日文标题</th>
+                    <th
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em; background-color: rgba(234, 236, 240,0.4); text-align: center;">
+                        中文标题</th>
+                    <th
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em; background-color: rgba(234, 236, 240,0.4); text-align: center;">
+                        剧本</th>
+                    <th
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em; background-color: rgba(234, 236, 240,0.4); text-align: center;">
+                        分镜</th>
+                    <th
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em; background-color: rgba(234, 236, 240,0.4); text-align: center;">
+                        演出</th>
+                    <th
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em; background-color: rgba(234, 236, 240,0.4); text-align: center;">
+                        作画监督</th>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        第1话</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        <span lang="ja">はじめてのパートナー</span>
+                    </td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        初次见面的搭档</td>
+                    <td rowspan="13"
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        <span
+                            style="background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">林直</span><span
+                            style="background-image: none; background-position: initial; background-size: initial; background-repeat: initial; background-attachment: initial; background-origin: initial; background-clip: initial;">孝</span>
+                    </td>
+                    <td colspan="2"
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        藤原佳幸</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        中岛千明、菊池爱</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        第2话</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        <span lang="ja">足を引っ張りたくないので</span>
+                    </td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        因为不想扯后腿</td>
+                    <td colspan="2"
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        菅原静贵</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        渡边祐记</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        第3话</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        <span lang="ja">同棲はじめました</span>
+                    </td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        开始展开同居生活</td>
+                    <td colspan="2"
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        木村泰大</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        山崎淳</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        第4话</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        <span lang="ja">うまく笑えなくて</span>
+                    </td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        无法露出自然的笑容</td>
+                    <td rowspan="2"
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        福田道生</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        饭野慎也</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        伊藤晋之</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        第5话</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        <span lang="ja">守りたかった約束</span>
+                    </td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        想要守护的约定</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        野木森达哉</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        东岛久志</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        第6话</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        <span lang="ja">2人、おかえり</span>
+                    </td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        两人，欢迎回来</td>
+                    <td colspan="2"
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        藤原佳幸</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        三岛千枝、一之濑结梨<br />
+                        谷口元浩</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        第7话</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        <span lang="ja">上手なデートの誘い方</span>
+                    </td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        良好的约会邀请方法</td>
+                    <td colspan="2"
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        木村泰大</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        桥口隼人、加藤壮<br />
+                        伊藤晋之、八木明<br />
+                        渡边祐记、山崎淳</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        第8话</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        <span lang="ja">知らない花火</span>
+                    </td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        不知名的烟火</td>
+                    <td colspan="2"
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        山崎光惠</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        高桥沙妃</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        第9话</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        <span lang="ja">祭りの後</span>
+                    </td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        祭典之后</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        上坪亮树</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        木野目优</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        村上龙之介、崎口沙织<br />
+                        东岛久志、福田幸子<br />
+                        针场裕子、袖山麻美<br />
+                        八木明</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        第10话</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        <span lang="ja">もう、パートナーじゃない</span>
+                    </td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        已经不再是搭档了</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        福田道生</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        野木森达哉</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        菊池爱、高桥沙妃<br />
+                        武藤干、曾我笃史<br />
+                        入木明、丸山修二<br />
+                        渡边祐记</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        第11话</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        <span lang="ja">オムライスの日</span>
+                    </td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        蛋包饭之日</td>
+                    <td colspan="2"
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        山崎光惠</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        袖山里都、中本尚</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        第12话</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        <span lang="ja">想い出が埋まってく</span>
+                    </td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        掩埋的回忆</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        入江泰浩</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        木村泰大</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        山崎淳、八木明<br />
+                        保村成、高桥沙妃<br />
+                        久保茉莉子、菊池爱</td>
+                </tr>
+                <tr>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        第13话</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        <span lang="ja">いつかまた巡り会えますように</span>
+                    </td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        但愿有天能够再次相逢</td>
+                    <td colspan="2"
+                        style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        藤原佳幸</td>
+                    <td style="border-style: solid; border-color: rgb(162, 169, 177); padding: 0.2em 0.4em;">
+                        中岛千明、渡边祐记<br />
+                        山崎淳、八木明<br />
+                        中本尚、菊永千里<br />
+                        海保仁美、高桥沙妃<br />
+                        菊池爱、市原圭子<br />
+                        伊藤大翼、丸山修二<br />
+                        东岛久志、中野裕纪<br />
+                        &nbsp;</td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+
+    <!-- 版权背景 -->
+    <div id="footer">Changbo Yan 20222241434</div>
+</body>
+
+</html>

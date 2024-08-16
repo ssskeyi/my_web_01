@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>可塑性记忆</title>
+    <style>
+        /* 样式 */
+        h1 {
+            text-align: center;
+            font-size: 42px;
+            color: rgba(235, 82, 230, 0.8);
+        }
+
+        .bg-image {
+            background-image: url('../image/8e158a9d9c45489ba127e2f1796cca94.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            height: 100vh;
+            background-attachment: fixed;
+        }
+
+        .audio-wrapper {
+            position: fixed;
+            left: 0;
+            bottom: 25px;
+            width: 180px;
+            /* 设置宽度，使得控制栏不占满整个屏幕 */
+            padding: 10px;
+            background-color: rgba(173, 197, 220, 0);
+            /* 控制栏背景透明度 */
+            z-index: 9999;
+            /* 确保控制栏在最上层 */
+        }
+
+        audio {
+            width: 100%;
+        }
+
+        /* 左侧导航栏 */
+        #sidebar {
+            position: fixed;
+            top: 100px;
+            left: 0;
+            bottom: 25px;
+            width: 200px;
+            background-color: rgba(173, 197, 220, 0.3);
+            overflow-y: auto;
+        }
+
+        /* 标题背景 */
+        #header {
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 100px;
+            background-color: rgb(92, 142, 250);
+            background-image: url('../image/5bec6cd1decec832f2914e6b9e8fe0f8.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            z-index: 1;
+            box-sizing: border-box;
+        }
+
+
+        /* 版权背景 */
+        #footer {
+            text-align: center;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            height: 25px;
+            background-color: rgba(244, 175, 46, 0.7);
+        }
+
+        /* 右侧内容 */
+        #content {
+            position: relative;
+            top: 100px;
+            margin-left: 200px;
+            bottom: 25px;
+            width: 1355px;
+            background-color: rgba(173, 197, 220, 0.5);
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body class="bg-image">
+
+    <!-- 背景音乐 -->
+    <div class="audio-wrapper">
+        <audio autoplay loop controls>
+            <source src="../audio/aila.mp3">
+        </audio>
+    </div>
+
+    <!-- 标题背景 -->
+    <div id="header">
+        <h1>《可塑性记忆》</h1>
+    </div>
+
+    <!-- 左侧导航栏 -->
+    <div id="sidebar">
+        <ul
+            style="font-size: 42px; color: rgb(234, 200, 32);background-color: rgba(197, 106, 222,0.7);margin-top: 0px;">
+            导航栏
+        </ul>
+        <ul style="font-size: 24px; color: rgb(238, 35, 231);padding-top: 10px;">
+            <li><a href="page1.html">故事概要</a></li>
+            <li><a href="page2.html">分集</a></li>
+            <li><a href="page3.html">人物图鉴</a></li>
+            <li><a href="page4.html">制作人员</a></li>
+            <li><a href="../index.html">返回导航页</a></li>
+        </ul>
+    </div>
+
+    <!-- 右侧内容 -->
+    <div id="content">
+        <!--相关人物-->
+        <div>
+            <div><span></span>
+                <h2>相关人物</h2>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.bnacg.com/dmrw/11294.html" target="_blank" rel="nofollow"> <img
+                            src="https://www.bnacg.com/uploads/2107/1-210HG04939200.jpg" title="水柿司" alt="水柿司" /> </a>
+                </div>
+                <div>
+                    <div> <a href="https://www.bnacg.com/dmrw/11294.html" target="_blank">
+                            <h3>水柿司</h3>
+                        </a> </div>
+                    <div>
+                        <div> <span>性别：</span>男 </div>
+                        <div> <span>人物属性：</span>主角</div>
+                        <div> <span>角色外貌：</span>棕发,绿瞳</div>
+                        <div> <span>人物配音：</span>内匠靖明</div>
+                        <div> <span>人物简介：</span>
+                            水柿司(水柿 ツカサ(みずがき ツカサ)，声：内匠靖明)
+
+                            　　男主角。18岁，大学考试因为盲肠炎而落榜后，在父母利用关系下进入“SAI社”的第一终端服务课工作。
+
+                            　　第一次在大楼看到艾拉就对其有好感，被香月指责并被怀疑是萝莉控，在第一次跟艾拉的工作中，得知艾拉迷糊的个性。原本认为回收只需在意所有者的意愿而被香月纠正。
+
+                            　　时常会为了与艾拉亲近而被建议并行动，但总是搞砸而被绢岛鄙视。在香月告知司艾拉的寿命只剩下约一千小时的时候，在知道的当下司感到非常震惊，依然坚持要继续与艾拉搭档到最后一刻，并为此感到非常痛苦。
+
+                            　　在夏日庙会中向艾拉告白，但被艾拉拒绝，其后被香月解除与艾拉的搭档关系。在香月纠正艾拉因为痛苦的回忆而变得倔强的性格后，艾拉对司告白，并恢复搭档关系，两人进而交往，甜蜜的度过剩余的时光。
+
+                            　　于第13话在将艾拉送下摩天轮后与香月见面，被香月说一句‘你还是努力的坚强忍耐到最后一刻。’尔后才崩溃。
+
+                            　　之后在别的单位研习九个月后，回到终端服课，并与新搭档握手。
+
+                            　　据众多人传言，新搭档似乎就是已重灌OS(Operation System)的艾拉。</div>
+
+                    </div>
+                </div>
+                <div> </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.bnacg.com/dmrw/11293.html" target="_blank" rel="nofollow"> <img
+                            src="https://www.bnacg.com/uploads/2107/1-210HG0351M93.jpg" title="艾拉" alt="艾拉" /> </a>
+                </div>
+                <div>
+                    <div> <a href="https://www.bnacg.com/dmrw/11293.html" target="_blank">
+                            <h3>艾拉</h3>
+                        </a> </div>
+                    <div>
+                        <div> <span>性别：</span>女 </div>
+                        <div> <span>人物属性：</span>天然呆,可爱,羞涩,软妹loli</div>
+                        <div> <span>角色外貌：</span>双马尾,及腰,长发,红色眼睛,白发</div>
+                        <div> <span>人物配音：</span>雨宫天</div>
+                        <div> <span>人物简介：</span>
+                            　　艾拉(アイラ，Isla，声：雨宫天)
+
+                            　　女主角。司的搭档，少女型GIFTIA，不常显露感情(第6话第一次露出笑容)，曾是回收率最高的GIFTIA，但因为寿命所剩不多(在与司搭档的时候已剩余约2000小时)，故各项能力逐渐下降。曾经和香月搭档，3年前解除搭档关系。
+
+                            　　在与司的搭档过程中，逐渐对司产生了好感，并常常因为司接近其他女性，露出嫉妒的感觉。
+
+                            　　在夏日庙会(第8话)中责问司与她搭档的痛苦，最后被司告白，并且拒绝。
+
+                            　　被香月解除与司的搭档关系(第9话)后，与香月久违的搭档工作的第一站却是GIFTIA与主人没有任何感情的回收对象，但是艾拉在与主人交谈时不经意的说出了“和喜欢的人一起度过时光才是最开心的”这么一句话。
+
+                            　　之后在地下停车场述说为何不能跟司在一起的原因，被香月的一句“你可是说过和喜欢的人一起度过时光才是最开心的”，因此了解自己真正的心意，并于隔天向司告白。
+
+                            　　第12话中告诉了司每次回收时都会向回收对象所说的话：“希望有一天你能与珍爱的人重逢”(大切な人と、いつかまた巡り会えますように)。
+
+                            　　到了第13话与司在游乐园度过最后一天的寿命期限，到了闭馆时间两人乘上摩天轮，艾拉要求司为她戴上回收的戒指，两人接吻，并十指交扣完成回收。
+
+                            　　据众多人传言,与司的新搭档就是已重灌OS(Operation System)的艾拉。
+                        </div>
+
+                    </div>
+                </div>
+                <div> </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.bnacg.com/dmrw/11295.html" target="_blank" rel="nofollow"> <img
+                            src="https://www.bnacg.com/uploads/2107/1-210HG05343542.png" title="绢岛满" alt="绢岛满" /> </a>
+                </div>
+                <div>
+                    <div> <a href="https://www.bnacg.com/dmrw/11295.html" target="_blank">
+                            <h3>绢岛满</h3>
+                        </a> </div>
+                    <div>
+                        <div> <span>性别：</span>女 </div>
+                        <div> <span>人物属性：</span>前辈</div>
+                        <div> <span>角色外貌：</span>长发,橘发,蓝瞳</div>
+                        <div> <span>人物配音：</span>赤崎千夏</div>
+                        <div> <span>人物简介：</span>
+                            　　绢岛满/绢岛美智留(絹島 ミチル(きぬしま ミチル)，声：赤崎千夏)
+
+                            　　司的前辈，17岁的女性社员。负责指导司的工作。工作的过程中渐渐对司产生了好感，并常常想对司施予关心，会后自嘲而不了了之。
+
+                            　　其养父是GIFTIA，从小被养父所养大。在3年前因为拒绝回收GIFTIA，导致其GIFTIA因超过期限成为游荡者。但也因此结识了实香月和艾拉，而回收的过程使满改变了对GIFTIA的看法。
+                        </div>
+
+                    </div>
+                </div>
+                <div> </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.bnacg.com/dmrw/11296.html" target="_blank" rel="nofollow"> <img
+                            src="https://www.bnacg.com/uploads/2107/1-210HG0562b96.png" title="扎克" alt="扎克" /> </a>
+                </div>
+                <div>
+                    <div> <a href="https://www.bnacg.com/dmrw/11296.html" target="_blank">
+                            <h3>扎克</h3>
+                        </a> </div>
+                    <div>
+                        <div> <span>性别：</span>男 </div>
+                        <div> <span>人物属性：</span>GIFTIA</div>
+                        <div> <span>角色外貌：</span>金发,蓝瞳</div>
+                        <div> <span>人物配音：</span>矢作纱友里</div>
+                        <div> <span>人物简介：</span>
+                            　　札克(ザック，Zack，声：矢作纱友里)
+
+                            　　满的搭档，少年型GIFTIA。手上时常拿着一台掌上电玩，为满所赠。腹黑属性，常常利用司的话题来让满紧张，措手不及。在圆滑地处理业务这方面的能力相当优秀
+                        </div>
+
+                    </div>
+                </div>
+                <div> </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.bnacg.com/dmrw/11297.html" target="_blank" rel="nofollow"> <img
+                            src="https://www.bnacg.com/uploads/2107/1-210HG05R3409.png" title="桑乃实香月" alt="桑乃实香月" />
+                    </a>
+                </div>
+                <div>
+                    <div> <a href="https://www.bnacg.com/dmrw/11297.html" target="_blank">
+                            <h3>桑乃实香月</h3>
+                        </a> </div>
+                    <div>
+                        <div> <span>性别：</span>女 </div>
+                        <div> <span>人物属性：</span>上司</div>
+                        <div> <span>角色外貌：</span>红发,紫瞳</div>
+                        <div> <span>人物配音：</span>丰口惠美</div>
+                        <div> <span>人物简介：</span>
+                            桑乃实香月(桑乃実 カヅキ(くわのみ カヅキ)，声：丰口惠)
+
+                            　　司的女性上司。说话方式很有男子气概，也很会照顾他人，不过有时候也会动手，因而在部门里受人敬畏。
+
+                            　　3年前曾为回收徘徊者，导致右脚受重伤，目前的右脚为义肢。曾经和艾拉搭档，帮助艾拉向前踏出了一步，也显示出对艾拉的重视、喜欢。</div>
+
+                    </div>
+                </div>
+                <div> </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.bnacg.com/dmrw/11298.html" target="_blank" rel="nofollow"> <img
+                            src="https://www.bnacg.com/uploads/2107/1-210HG10346324.png" title="康斯坦斯" alt="康斯坦斯" /> </a>
+                </div>
+                <div>
+                    <div> <a href="https://www.bnacg.com/dmrw/11298.html" target="_blank">
+                            <h3>康斯坦斯</h3>
+                        </a> </div>
+                    <div>
+                        <div> <span>性别：</span>男 </div>
+                        <div> <span>人物属性：</span>GIFTIA</div>
+                        <div> <span>角色外貌：</span>蓝发,短发,眼镜</div>
+                        <div> <span>人物配音：</span>日野聪</div>
+                        <div> <span>人物简介：</span>
+                            　　康斯坦斯(コンスタンス，Constance，声：日野聪）
+
+                            　　香月的搭档，青年型GIFTIA。具有极高的洞察力，有着温柔的性格，是任何事都能漂亮地处理好的类型。并且是一个魔术师。总是在旁支持着香月。
+
+                        </div>
+
+                    </div>
+                </div>
+                <div> </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.bnacg.com/dmrw/11299.html" target="_blank" rel="nofollow"> <img
+                            src="https://www.bnacg.com/uploads/2107/1-210HG10S42N.png" title="缥康隆" alt="缥康隆" /> </a>
+                </div>
+                <div>
+                    <div> <a href="https://www.bnacg.com/dmrw/11299.html" target="_blank">
+                            <h3>缥康隆</h3>
+                        </a> </div>
+                    <div>
+                        <div> <span>性别：</span>男 </div>
+                        <div> <span>人物属性：</span>上司</div>
+                        <div> <span>角色外貌：</span>绿发,胡子</div>
+                        <div> <span>人物配音：</span>津田健次郎</div>
+                        <div> <span>人物简介：</span>
+                            　　缥康孝(縹 ヤスタカ(はなだ ヤスタカ)，声：津田健次郎）
+
+                            　　司的男性上司。已有十年工作经验，看起来是很随兴的人。常常提供司接近艾拉的鬼点子。
+
+                            &nbsp;
+                        </div>
+
+                    </div>
+                </div>
+                <div> </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.bnacg.com/dmrw/11300.html" target="_blank" rel="nofollow"> <img
+                            src="https://www.bnacg.com/uploads/2107/1-210HG1103J02.png" title="雪莉" alt="雪莉" /> </a>
+                </div>
+                <div>
+                    <div> <a href="https://www.bnacg.com/dmrw/11300.html" target="_blank">
+                            <h3>雪莉</h3>
+                        </a> </div>
+                    <div>
+                        <div> <span>性别：</span>女 </div>
+                        <div> <span>人物属性：</span>GIFTIA</div>
+                        <div> <span>角色外貌：</span>黑发</div>
+                        <div> <span>人物配音：</span>爱美</div>
+                        <div> <span>人物简介：</span>
+                            　　雪莉(シェリー，Shelley，声：爱美)
+
+                            　　康孝的搭档，职业女性型GIFTIA。性格相当地认真，也非常严格。
+                            &nbsp;
+                        </div>
+                    </div>
+                </div>
+                <div> </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.bnacg.com/dmrw/11301.html" target="_blank" rel="nofollow"> <img
+                            src="https://www.bnacg.com/uploads/2107/1-210HG1154Y95.png" title="海松艾露" alt="海松艾露" /> </a>
+                </div>
+                <div>
+                    <div> <a href="https://www.bnacg.com/dmrw/11301.html" target="_blank">
+                            <h3>海松艾露</h3>
+                        </a> </div>
+                    <div>
+                        <div> <span>性别：</span>女 </div>
+                        <div> <span>人物属性：</span>工程师</div>
+                        <div> <span>角色外貌：</span>金发,马尾,橙瞳</div>
+                        <div> <span>人物配音：</span>上坂堇</div>
+                        <div> <span>人物简介：</span>
+                            海松爱瑠(海松 エル(みる エル)，声：上坂堇)
+
+                            　　负责“GIFTIA”维护工作的女性。对于男女关系似乎抱有奇怪的幻想。曾经尝试给艾拉穿上女仆装，但被艾拉婉拒，后来司为了吸引艾拉注意曾跟爱瑠借该件女装，并穿上身。
+
+                            　　看到安迪误以为是过去还没换OS的好友奥利维亚，并邀请了安迪到庙会，也给予了司邀请艾拉的机会。
+                        </div>
+
+                    </div>
+                </div>
+                <div> </div>
+            </div>
+            <div>
+                <div>
+                    <a href="https://www.bnacg.com/dmrw/11302.html" target="_blank" rel="nofollow"> <img
+                            src="https://www.bnacg.com/uploads/2107/1-210HG22Q0316.png" title="山野边孝雄" alt="山野边孝雄" />
+                    </a>
+                </div>
+                <div>
+                    <div> <a href="https://www.bnacg.com/dmrw/11302.html" target="_blank">
+                            <h3>山野边孝雄</h3>
+                        </a> </div>
+                    <div>
+                        <div> <span>性别：</span>男 </div>
+                        <div> <span>人物属性：</span>课长</div>
+                        <div> <span>角色外貌：</span>短发</div>
+                        <div> <span>人物配音：</span>飞田展男</div>
+                        <div> <span>人物简介：</span>
+                            　　山野边隆雄(山野辺 タカオ(やまのべ タカオ)，声：飞田展男)
+                            　　&ldquo;终端服务课&rdquo;的课长，育有子女，但最近亲子间关系遭遇瓶颈。因为花费过多金钱的关系，常常被请到主公司喝茶。
+                            &nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 版权背景 -->
+    <div id="footer">Changbo Yan 20222241434</div>
+</body>
+
+</html>
